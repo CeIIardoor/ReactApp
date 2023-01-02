@@ -14,10 +14,14 @@
     "format": "npm run prettier:fix && npm run lint:fix"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
     "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "reactstrap": "^9.1.5"
+    "react-router-dom": "^5.3.0",
+    "reactstrap": "^5.0.0",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
