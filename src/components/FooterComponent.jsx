@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function FooterComponent() {
   return (
@@ -25,22 +25,40 @@ function FooterComponent() {
           </div>
           <div className="col-7 col-sm-5">
             <h5>Our Address</h5>
-            <address> 121, Clear Water Bay Road
+            <address>
+              {' '}
+              121, Clear Water Bay Road
               <br /> Clear Water Bay, Kowloon
               <br /> HONG KONG
               <br /> <i className="fa fa-phone fa-lg"></i>: +852 1234 5678
               <br /> <i className="fa fa-fax fa-lg"></i>: +852 8765 4321
-              <br /> <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:example@example.com"> example@example.com</a>
+              <br /> <i className="fa fa-envelope fa-lg"></i>:{' '}
+              <a href="mailto:example@example.com"> example@example.com</a>
             </address>
           </div>
           <div className="col-12 col-sm-4 align-self-center">
             <div className="text-center">
-              <a className="btn btn-social-icon btn-google" href="https://google.com/+"><i className="fa fa-google-plus"></i></a>
-              <a className="btn btn-social-icon btn-facebook" href="https://www.facebook.com/profile.php?id="><i className="fa fa-facebook"></i></a>
-              <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/"><i className="fa fa-linkedin"></i></a>
-              <a className="btn btn-social-icon btn-twitter" href="https://twitter.com/"><i className="fa fa-twitter"></i></a>
-              <a className="btn btn-social-icon btn-google" href="https://youtube.com/"><i className="fa fa-youtube"></i></a>
-              <a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a>
+              <a className="btn btn-social-icon btn-google" href="https://google.com/+">
+                <i className="fa fa-google-plus"></i>
+              </a>
+              <a
+                className="btn btn-social-icon btn-facebook"
+                href="https://www.facebook.com/profile.php?id="
+              >
+                <i className="fa fa-facebook"></i>
+              </a>
+              <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/">
+                <i className="fa fa-linkedin"></i>
+              </a>
+              <a className="btn btn-social-icon btn-twitter" href="https://twitter.com/">
+                <i className="fa fa-twitter"></i>
+              </a>
+              <a className="btn btn-social-icon btn-google" href="https://youtube.com/">
+                <i className="fa fa-youtube"></i>
+              </a>
+              <a className="btn btn-social-icon" href="mailto:">
+                <i className="fa fa-envelope-o"></i>
+              </a>
             </div>
           </div>
         </div>
