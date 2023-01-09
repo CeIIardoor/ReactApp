@@ -1,5 +1,5 @@
-import { Breadcrumb, BreadcrumbItem, Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Breadcrumb, BreadcrumbItem, Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function RenderMenuItem({ dish }) {
   return (

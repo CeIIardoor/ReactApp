@@ -10,7 +10,7 @@ import Contact from './ContactComponent';
 import COMMENTS from '../shared/comments.js';
 import PROMOTIONS from '../shared/promotions.js';
 import LEADERS from '../shared/leaders.js';
-import DishDetail from "./DishdetailComponent.jsx";
+import DishDetail from './DishdetailComponent.jsx';
 import About from './AboutComponent.jsx';
 
 class MainComponent extends Component {
@@ -43,11 +43,13 @@ class MainComponent extends Component {
         <div>
           <DishDetail
             dish={this.state.dishes.filter(dish => dish.id === parseInt(match.params.dishId))[0]}
-            comments={this.state.comments.filter(comment => comment.dishId === parseInt(match.params.dishId))}
+            comments={this.state.comments.filter(
+              comment => comment.dishId === parseInt(match.params.dishId),
+            )}
           />
         </div>
       );
-    }
+    };
 
     return (
       <div>

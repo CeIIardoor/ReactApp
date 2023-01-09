@@ -1,6 +1,14 @@
-import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardImg, CardText, CardTitle } from "reactstrap";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  Card,
+  CardBody,
+  CardImg,
+  CardText,
+  CardTitle,
+} from 'reactstrap';
 import comments from '../shared/comments.js';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function RenderDish({ dish }) {
   return (
@@ -16,9 +24,9 @@ function RenderDish({ dish }) {
   );
 }
 function RenderComments({ comments }) {
-    const dishComments =
-      comments.filter(comment => comment.dishId === 0)
-      .map(comment => {
+  const dishComments = comments
+    .filter(comment => comment.dishId === 0)
+    .map(comment => {
       return (
         <li key={comment.id}>
           <p>{comment.comment}</p>
