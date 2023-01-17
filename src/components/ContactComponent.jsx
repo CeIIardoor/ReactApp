@@ -3,12 +3,11 @@ import { Breadcrumb, BreadcrumbItem, Label, Col, Button, Row } from "reactstrap"
 import { Link } from "react-router-dom";
 import { Control, Errors, LocalForm } from "react-redux-form";
 
-
-const required = (val) => val && val.length;
-const maxLength = (len) => (val) => !(val) || (val.length <= len);
-const minLength = (len) => (val) => (val) && (val.length >= len);
-const isNumber = (val) => !isNaN(Number(val));
-const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+const required = val => val && val.length;
+const maxLength = len => val => !val || val.length <= len;
+const minLength = len => val => val && val.length >= len;
+const isNumber = val => !isNaN(Number(val));
+const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
 class Contact extends Component {
   constructor(props) {
@@ -80,7 +79,7 @@ class Contact extends Component {
             <h3>Send us your Feedback</h3>
           </div>
           <div className="col-12 col-md-9">
-            <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
+            <LocalForm onSubmit={values => this.handleSubmit(values)}>
               <Row className="form-group">
                 <Label htmlFor="firstname" md={2}>
                   First Name
@@ -202,21 +201,13 @@ class Contact extends Component {
                 <Col md={{ size: 6, offset: 2 }}>
                   <div className="form-check">
                     <Label check>
-                      <Control.checkbox
-                        model=".agree"
-                        name="agree"
-                        className="form-check-input"
-                      />{" "}
+                      <Control.checkbox model=".agree" name="agree" className="form-check-input" />{" "}
                       <strong>May we contact you?</strong>
                     </Label>
                   </div>
                 </Col>
                 <Col md={{ size: 3, offset: 1 }}>
-                  <Control.select
-                    name="contactType"
-                    model=".contactType"
-                    className="form-control"
-                  >
+                  <Control.select name="contactType" model=".contactType" className="form-control">
                     <option>Tel.</option>
                     <option>Email</option>
                   </Control.select>
